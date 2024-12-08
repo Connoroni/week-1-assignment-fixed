@@ -12,6 +12,10 @@ body {
   min-height: 600vh;
   max-height: max-content;
   padding-bottom: 1vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button {
+  cursor: pointer;
 }
 
 header {
@@ -38,39 +42,54 @@ header {
   font-size: 2rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+.navbar a {
+  color: green;
+}
 
 .section {
-  min-height: 100vh;
+  min-height: 50vh;
   max-height: fit-content;
   padding-left: 0.5rem;
+  padding-bottom: 2rem;
+  border-bottom: black 2px;
 }
 .section-head {
   padding-top: 10vh;
+  font-size: 2.5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: darkgrey;
 }
 .top-button {
   background-color: black;
   border-radius: 5px;
   border-color: transparent;
   color: white;
+  margin-bottom: 1rem;
 }
 .section-p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+  color: white;
 }
 
 .home {
-  background-color: #d60270;
+  background-image: url("https://gorillas.org/wp-content/uploads/gorillaorg-latestnews-1-2000x722.jpg");
+  background-size: cover;
+  height: 10vh;
 }
 .species {
-  background-color: #9b4f96;
+  background-image: url("https://i.pinimg.com/736x/1c/43/ba/1c43ba042583fcd1f7424862c3e7b119.jpg");
+  background-size: contain;
+  background-repeat: repeat-y;
   min-height: 200vh;
   max-height: fit-content;
+  color: white;
 }
 .conservation {
-  background-color: #0038a8;
+  background-image: url("https://seaworld.org/-/media/migrated-media/seaworld-dotorg/images/infobooks/gorillas/section-content/habitat-and-distribution/pic-sea-gorilla-habitat-03.jpg");
+  background-size: cover;
 }
 .news {
-  background-color: white;
+  background-image: url("https://images5.alphacoders.com/769/thumb-1920-769960.jpg");
 }
 
 .species-bar {
@@ -83,18 +102,33 @@ header {
   background-color: black;
   border-radius: 5px;
   border-color: transparent;
+  border-width: 0.25rem;
   color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.species-bar button:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
 }
 .subspecies {
   padding-top: 3rem;
   min-height: 75vh;
   max-height: fit-content;
+  background-image: url("https://i.ebayimg.com/images/g/YD8AAOSwu99knDIZ/s-l1200.jpg");
+  background-size: cover;
+  color: white;
+}
+.species-button {
+  background-color: black;
+  border-radius: 5px;
+  border-color: transparent;
+  color: white;
 }
 .e-lowland {
-  background-color: green;
   margin-top: 4rem;
 }
-.mountain {
+/* .mountain {
   background-color: green;
 }
 .c-river {
@@ -102,7 +136,7 @@ header {
 }
 .w-lowland {
   background-color: green;
-}
+} */
 .subspecies-p {
   padding-top: 1rem;
   padding-bottom: 2rem;
@@ -116,9 +150,11 @@ header {
 
 footer {
   text-align: center;
-  padding: 0.25rem;
+  padding: 2rem;
+  padding-bottom: 2rem;
   font-size: 0.75rem;
-  color: black;
+  background-color: black;
+  color: white;
 }
 .tiny {
   font-size: 0.5rem;
