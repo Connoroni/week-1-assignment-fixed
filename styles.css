@@ -1,0 +1,105 @@
+/* vh and vw (viewport height and width) size units used to adapt site to what the user can see on screen, these sound useful*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  color: whitesmoke;
+  width: 100vw;
+  z-index: 10;
+  height: fit-content;
+  /* height: 2.5rem; */
+}
+.title {
+  position: sticky;
+  left: 0.5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.section {
+  height: 100vh;
+  padding-left: 0.5rem;
+}
+.section-head {
+  padding-top: 10vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.top-button {
+  background-color: black;
+  border-radius: 5px;
+  border-color: transparent;
+  color: white;
+}
+.section-p {
+  font-size: 1.5rem;
+}
+
+.home {
+  background-color: #d60270;
+}
+.species {
+  background-color: #9b4f96;
+  height: 200vh;
+}
+.conservation {
+  background-color: #0038a8;
+}
+.legal {
+  background-color: white;
+}
+
+.species-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.species-bar button {
+  font-size: 1.5rem;
+  background-color: black;
+  border-radius: 5px;
+  border-color: transparent;
+  color: white;
+}
+.subspecies {
+  padding-top: 3rem;
+  height: 75vh;
+}
+.e-lowland {
+  background-color: green;
+  margin-top: 4rem;
+}
+.mountain {
+  background-color: green;
+}
+.c-river {
+  background-color: green;
+}
+.w-lowland {
+  background-color: green;
+}
+.subspecies-p {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+.subspecies-img {
+  padding-right: 1rem;
+  height: vh;
+}
