@@ -4,7 +4,7 @@ New repo for my week 1 assignment after the previous one was broken because of l
 
 Reflection
 
-I'm happy with the outcome of the website, and think I achieved all of the required goals. I achieved a few of the stretch goals by making a "return to top" button, a footer with social media links, and a hover effect on my buttons (even the ones that were just anchors disguised as buttons). I tried to add the background music but this was a bit of a disaster as I've detailed below so I gave up on it. I also looked around for how to get smooth scrolling on my buttons but couldn't figure it out.
+I'm happy with the outcome of the website, and think I achieved all of the required goals. I achieved a few of the stretch goals by making a "return to top" button, a footer with social media links, and a hover effect on my buttons (even the ones that were just anchors disguised as buttons). I tried to add the background music but this was a bit of a disaster, as I detailed below while I was trying to fix it, so I gave up on it. I also looked around for how to get smooth scrolling on my buttons but couldn't figure it out. I think I could've done better in the design aspect, as I had some issues with choosing high quality backgrounds that didn't make the text illegible. I looked at some options like blurring the background with backdrop-filter in CSS but couldn't get it to work, so instead swapped out those background images with ones that had better contrast with the text.
 
 Audio Issues
 
