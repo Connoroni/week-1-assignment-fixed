@@ -28,7 +28,7 @@
     <main>
       <div class="section home" id="home">
         <h1 class="section-head">Home</h1>
-        <button class="top-button">Return to Top</button>
+        <button class="top-button" onclick="topButton()">Return to Top</button>
         <p class="section-p">
           Welcome to Gorilla Central! This is the home for gorilla information
           on the web. We feature topics including the species and subspecies of
@@ -39,12 +39,12 @@
       </div>
       <div class="section species" id="species">
         <h1 class="section-head">Species and Subspecies</h1>
-        <button class="top-button">Return to Top</button>
+        <button class="top-button" onclick="topButton()">Return to Top</button>
         <div class="species-bar">
-          <button>Eastern Lowland Gorilla</button>
-          <button>Mountain Gorilla</button>
-          <button>Cross River Gorilla</button>
-          <button>Western Lowland Gorilla</button>
+          <a href="#e-lowland" class="species-button">Eastern Lowland Gorilla</a>
+          <a href="#mountain" class="species-button">Mountain Gorilla</a>
+          <a href="#c-river" class="species-button">Cross River Gorilla</a>
+          <a href="#w-lowland" class="species-button">Western Lowland Gorilla</a>
         </div>
         <br /><br />
         <p class="section-p">
@@ -56,9 +56,9 @@
           Mountain gorilla. The subspecies of the Western gorilla are the Cross
           River gorilla and Western Lowland gorilla.
         </p>
-        <div class="subspecies e-lowland">
+        <div class="subspecies e-lowland" id="e-lowland">
           <h2>Eastern Lowland Gorilla</h2>
-          <button class="species-button">Return to Subspecies List</button>
+          <button class="top-button" onclick="topButton()">Return to Top</button>
           <div class="subspecies-p">
             <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Kbnpsilverbackandchild_0.5.jpg" alt="Kahuzi-Biega National Park silverback Eastern Lowland gorilla and child" class="subspecies-img" />
             <p>
@@ -132,9 +132,9 @@
             </p>
           </div>
         </div>
-        <div class="subspecies mountain">
+        <div class="subspecies mountain" id="mountain">
           <h2>Mountain Gorilla</h2>
-          <button class="species-button">Return to Subspecies List</button>
+          <button class="top-button" onclick="topButton()">Return to Top</button>
           <div class="subspecies-p">
             <img src="https://upload.wikimedia.org/wikipedia/commons/9/97/Silverback_of_Ntambara_group.JPG" alt="Silverback of Ntambara group in Rwanda (either Ntambara or Ugutsinda ?), in typical resting attitude. This gorilla weighs 200 kilograms." class="subspecies-img" />
             <p>
@@ -213,9 +213,9 @@
             </p>
           </div>
         </div>
-        <div class="subspecies c-river">
+        <div class="subspecies c-river" id="c-river">
           <h2>Cross River Gorilla</h2>
-          <button class="species-button">Return to Subspecies List</button>
+          <button class="top-button" onclick="topButton()">Return to Top</button>
           <div class="subspecies-p">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Cross-River-Gorilla-Gorilla-gorilla-diehli%29.jpg" alt="Female Cross River gorilla Nyango at Limbe Wildlife Centre, Cameroon" class="subspecies-img" />
             <p>
@@ -286,7 +286,7 @@
             </p>
           </div>
         </div>
-        <div class="subspecies w-lowland">
+        <div class="subspecies w-lowland" id="w-lowland">
           <h2>Western Lowland Gorilla</h2>
           <button class="species-button">Return to Subspecies List</button>
           <div class="subspecies-p">
@@ -412,7 +412,7 @@
       </div>
       <div class="section conservation" id="conservation">
         <h1 class="section-head">Conservation</h1>
-        <button class="top-button">Return to Top</button>
+        <button class="top-button" onclick="topButton()">Return to Top</button>
         <p class="section-p">
           All species (and subspecies) of gorilla are listed as endangered or
           critically endangered on the IUCN Red List. All gorillas are listed in
@@ -491,7 +491,7 @@
       </div>
       <div class="section news" id="news">
         <h1 class="section-head">News</h1>
-        <button class="top-button">Return to Top</button>
+        <button class="top-button" onclick="topButton()">Return to Top</button>
         <h2>
           OUR LATEST STORY: Gorilla Hosts Viral "Art Show" After Stealing
           Zookeeper's Paint Supplies
@@ -549,11 +549,15 @@
       <p></p>
     </main>
     <footer>
-      Gorilla Central and associated products are intellectual property of
+      <a href="https://twitter.com"><img class="socialmedia" src="https://cdn.freebiesupply.com/logos/large/2x/twitter-3-logo-png-transparent.png" alt="The logo for Twitter"></a>
+      <a href="https://www.facebook.com/"><img class="socialmedia" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Facebook_Logo_2023.png/800px-Facebook_Logo_2023.png" alt="The logo for Facebook"></a>
+      <a href="https://www.instagram.com/"><img class="socialmedia" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/768px-Instagram_icon.png" alt="The logo for Instagram"></a>
+      <a href="https://www.reddit.com/"><img class="socialmedia" src="https://www.iconpacks.net/icons/2/free-reddit-logo-icon-2436-thumb.png" alt="The logo for Reddit"></a>
+      <p>Gorilla Central and associated products are intellectual property of
       Gorilla Central LLC&copy; and its fictional shareholders. Gorilla Central
       LLC&copy; does not guarantee that the information on this website is
       correct or factual but to the best of our knowledge it's pretty much
-      mostly true, we think.
+      mostly true, we think.</p>
       <p class="tiny">
         Except the "News" section. That was purely ChatGPT, which had to be told
         to replace apostrophes and quotation marks with the correct HTML
