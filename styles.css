@@ -8,6 +8,11 @@
 a {
   text-decoration: none;
 }
+body {
+  min-height: 600vh;
+  max-height: max-content;
+  padding-bottom: 1vh;
+}
 
 header {
   position: sticky;
@@ -35,7 +40,8 @@ header {
 }
 
 .section {
-  height: 100vh;
+  min-height: 100vh;
+  max-height: fit-content;
   padding-left: 0.5rem;
 }
 .section-head {
@@ -57,12 +63,13 @@ header {
 }
 .species {
   background-color: #9b4f96;
-  height: 200vh;
+  min-height: 200vh;
+  max-height: fit-content;
 }
 .conservation {
   background-color: #0038a8;
 }
-.legal {
+.news {
   background-color: white;
 }
 
@@ -80,7 +87,8 @@ header {
 }
 .subspecies {
   padding-top: 3rem;
-  height: 75vh;
+  min-height: 75vh;
+  max-height: fit-content;
 }
 .e-lowland {
   background-color: green;
@@ -98,8 +106,20 @@ header {
 .subspecies-p {
   padding-top: 1rem;
   padding-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 .subspecies-img {
   padding-right: 1rem;
-  height: vh;
+  height: 50vh;
+}
+
+footer {
+  text-align: center;
+  padding: 0.25rem;
+  font-size: 0.75rem;
+  color: black;
+}
+.tiny {
+  font-size: 0.5rem;
 }
